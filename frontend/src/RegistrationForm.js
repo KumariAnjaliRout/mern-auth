@@ -19,7 +19,7 @@ const RegistrationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${API_URL}/admin/auth/register`, formData);
+      await axios.post(`${API_URL}/api/admin/auth/register`, formData);
       alert("User registered successfully");
       navigation("/login");
     } catch (error) {
