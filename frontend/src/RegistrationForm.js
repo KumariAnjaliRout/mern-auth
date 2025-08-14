@@ -15,7 +15,6 @@ const RegistrationForm = () => {
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
   const [error, setError] = useState("");
-  console.log(API_URL);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
