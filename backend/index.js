@@ -8,9 +8,7 @@ const protectedRoutes = require("./router/protected");
 
 const app = express();
 
-app.use(cors({
-  origin
-}));
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI, {
